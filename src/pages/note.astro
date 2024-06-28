@@ -6,6 +6,7 @@ import TopNavigationBar from '../components/Nav.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
+
 		<svg
 			class="astro-a"
 			width="495"
@@ -35,23 +36,204 @@ import TopNavigationBar from '../components/Nav.astro';
 			</defs>
 		</svg>
         <TopNavigationBar />
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-        <ul>
-            <li><a href="/md/湖南的美食">湖南的美食</a></li>
-            <li><a href="/md/湖南的大学">湖南的大学</a></li>
-        </ul>  
+		<h1 class="text-gradient">你喜欢的演员都在这</h1>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>本地图片示例</title>
+			<style>
+			  body {
+				margin: 0;
+				padding: 20px;
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f4;
+			  }
+		  
+			  .image-container {
+				max-width: 100%; /* 最大宽度为页面宽度 */
+				margin: 0 auto; /* 居中显示 */
+			  }
+		  
+			  .responsive-image {
+				width:100%; /* 设置图片宽度为容器宽度的50%，可自行调整 */
+				/* 使用max-width确保图片在小屏幕上也能正确显示 */
+				max-width: 100%;
+				height: auto; /* 保持图片宽高比 */
+			  }
+			</style>
+		  </head>
+		  <body>
+			<!-- 图片容器，用于包含图片 -->
+			<div class="image-container">
+			  <!-- 插入本地图片 -->
+			  <!-- 请确保图片路径正确，且图片与HTML文件位于同一目录下 -->
+			  <img src="/public/81.png" alt="本地图片描述" class="responsive-image">
+			</div>
+		  </body>
+			
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			各个高颜值、精湛演技、各大题材热播剧，重生、穿越、甜宠偶像演员你喜欢的这里都有。
 		</p>
 		<ul role="list" class="link-card-grid">
-			"
+			<p class="instructions">
+				孙樾，原名孙越，1997年1月29日出生于陕西省西安市，毕业于浙江传媒学院 [5]，中国内地男演员。
+				<!-- 文本结尾插入网址图片 -->
+				<img src="http://img0.baidu.com/it/u=2949508908,1080641005&fm=253&app=138&f=JPEG?w=800&h=1266" 
+					 alt="孙越" 
+					 style="width: 100%; max-width: 300px; height: auto; margin-top: 1em;">
+			<div class="link-container">
+				<p><a href="https://www.bilibili.com/video/BV1gx421k7qf?t=2.4" target="_blank">《季总您的马甲叒掉了》</a></p>
+				<p><a href="https://www.bilibili.com/video/BV1r84y1R7s3?t=1.5" target="_blank">《分手八年后，我和前男友闪婚了》</a></p>
+				<p><a href="https://www.bilibili.com/video/BV1uZ421y7b4?t=1.6" target="_blank">《穆总的天价新娘》</a></p>
+			 <!-- 本地视频播放，设置为自动播放 -->
+			 <video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+				<source src="/public/21.mp4" type="video/mp4">
+				<source src="/public/21.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</video> </div>
+			  <p class="instructions">
+				申浩男，汉族，中国内地男演员。曾经在剧能玩的真人漫画《校草室友有剧毒》中饰演男主角杨希。
+				<!-- 文本结尾插入网址图片 -->
+					<img src="https://p1.meituan.net/movie/38ef4e6c0b1974300039bc293aab7047113287.jpg@464w_644h_1e_1c"
+					 alt="申浩男" 
+					 style="width: 100%; max-width: 400px; height: 320px; margin-top: 2em;">
+			<div class="link-container">
+				<p><a href="https://www.bilibili.com/video/BV1u2guefEj6?t=2.8" target="_blank">《玫瑰冠冕》</a></p>
+				<p><a href="https://www.bilibili.com/video/BV17C4y1T7Q2?t=13.8" target="_blank">《苏小姐请留步》</a></p>
+				<p><a href="https://www.bilibili.com/video/BV1694y1E7mz?t=3.9" target="_blank">《你是我的万千星辰》</a></p>
+			 		 <!-- 本地视频播放，设置为自动播放 -->
+					  <video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+						<source src="/public/62.mp4" type="video/mp4">
+						<source src="/public/62.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video> </div> </div>
+			
+            <Card
+				href="https://www.bilibili.com/video/BV1KM41117VT?t=8.6"
+				title="更多他们❤️"
+				body="刘润铭，2022年，主演《戏精女主桃花多》，网剧《我愿林深能见鹿》、《亲爱的司丞大人》饰演国师。 2023年，主演短剧《长殊行》，参演《藏药令》。何健麒。2023年6月因主演网络剧《倾城娇妻别招惹我》中饰演男一号秦允之一角从而进入演艺圈。同年在网络剧《当替身我月薪百万》饰演男主角江卓而崭露头角，先后又担任男一号拍摄了《繁花如梦》《落花时节又逢君》《潜龙在渊》《土匪皇后》《夏阳的轮回》"
+			/>
+			<p class="instructions">
+				徐艺真，出生于1998年1月23日，166 cm，水瓶座，中国内地女演员、制片人 ，毕业于浙江传媒学院。
+				<!-- 文本结尾插入网址图片 -->
+					<img src="https://hfa.cuz.edu.cn/__local/E/BE/E6/9CF51782739DE528DDC545E3CE0_A5281902_6F872.jpg"
+					 alt="徐艺真" 
+					 style="width: 100%; max-width: 400px; height: 320px; margin-top: 2em;">
+			<div class="link-container">
+				<p><a href="https://www.bilibili.com/video/BV1fb4y1M7KG?t=22.1" target="_blank">《你是天堂也是地狱》</a></p>
+				<p><a href="https://www.bilibili.com/video/BV1kJ4m177ZD?t=2.4" target="_blank">《哎呀，皇后娘娘来打工》</a></p>
+				<p><a href="https://www.bilibili.com/video/BV1Wg4y1R77x?t=2.3" target="_blank">《重生后被渣男死对头宠上天》</a></p>
+			 		 <!-- 本地视频播放，设置为自动播放 -->
+					  <video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+						<source src="/public/93.mp4" type="video/mp4">
+						<source src="/public/93.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video> </div> </div>
+					<p class="instructions">
+						王格格，中国内地女演员，1997年6月11日生。代表作品有《河神的新娘》。截至2024年5月24日，抖音平台66.1万粉丝，516.8万获赞。
+						<!-- 文本结尾插入网址图片 -->
+							<img src="https://ww1.sinaimg.cn/mw690/006fcIbily1hqbay8nkizj30u01907b5.jpg"
+							 alt="王格格" 
+							 style="width: 100%; max-width: 400px; height: 320px; margin-top: 2em;">
+					<div class="link-container">
+						<p><a href="https://www.bilibili.com/video/BV1Q94y1F7do?t=1.7" target="_blank">《脱缰 》</a></p>
+						<p><a href="https://www.bilibili.com/video/BV1cJ4m13715?t=9.8" target="_blank">《厉总的落跑娇妻不好追》</a></p>
+						<p><a href="https://www.bilibili.com/video/BV1NQ4y1j7a5?t=1.6" target="_blank">《顾总，太太又把您拉黑了》</a></p>
+							  <!-- 本地视频播放，设置为自动播放 -->
+							  <video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+								<source src="/public/94.mp4" type="video/mp4">
+								<source src="/public/94.webm" type="video/webm">
+								Your browser does not support the video tag.
+							</video> </div> </div>
+			<ul role="list" class="link-card-grid">
+			<Card
+				href="https://www.bilibili.com/video/BV1xz421Q72Q?t=99.2"
+				title="更多她们❤️"
+				body="孟娜。热门短剧《偏爱王牌千金》《他以痛吻我》《顾总，太太又把你拉黑了》《哎呀，女帝大人驾到》《遇见你的星期八》《这么多年，爱你成瘾亦成罪》《婚后被大佬惯坏了》;马秋元2022年，初次踏入短剧拍摄的马秋元在系列短剧《小魔女秋元》中担任女主秋元，元气活泼的少女感出演。2023年2月，出演《回到古代当太子》中高丽公主金雪熙一角；同年4月，出演《世间万物不及你》女主角方可欣。参演作品还有《偏偏宠爱》《极品假太监》《离婚后郁总乖乖受虐》《替嫁承欢王爷毒妃不好惹》《倾世弃妃》等"
+			/>
+			
+			
+			
+			<Card
+				href=""
+				title="联系我们"
+				body="关于以上全部网页有任何意见与建议都可以联系我们！感谢您的支持 ❤️"
 			/>
 		</ul>
 	</main>
 </Layout>
 
 <style>
+	  /* 添加样式 */
+	  .image-container {
+            /* 定位图片容器，可以根据需要调整 */
+            position: relative;
+            width: 100%; /* 容器宽度 */
+            max-width: 800px; /* 最大宽度 */
+            margin: 0 auto; /* 水平居中 */
+        }
+
+        .image-container img {
+            width: 100%; /* 图片宽度 */
+            height: auto; /* 自动高度，保持宽高比 */
+            object-fit: cover; /* 裁剪或填充图片以适应容器 */
+        }
+
+        /* 如果需要添加边框或阴影等样式 */
+        .image-container img {
+            border: 2px solid #ccc; /* 边框 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+        }
+	 /* 短剧类别样式 */
+	 .drama-categories {
+        background-color: rgba(50, 17, 17, 0.1); /* 轻微的背景颜色 */
+        border-radius: 0.5px; /* 圆角边框 */
+        padding: 0.5rem;
+        margin-bottom: 0.5rem; /* 与下方内容的边距 */
+    }
+
+    .category-list {
+        list-style-type: none; /* 移除列表项默认的标记 */
+        padding: 0;
+    }
+
+    .category-list li {
+        display: inline; /* 内联显示列表项 */
+        margin-right: 10px; /* 列表项之间的间隔 */
+    }
+
+    .category-list li a {
+        text-decoration: none; /* 移除下划线 */
+        color: white; /* 文字颜色 */
+        font-weight: 500; /* 字体加粗 */
+        transition: color 0.3s; /* 颜色变化的过渡效果 */
+    }
+
+    .category-list li a:hover {
+        color: #007bff; /* 鼠标悬浮时的文字颜色 */
+    }
+
+    /* 其他样式... */
+	  /* 全局样式重置 */
+	  body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* 背景图像设置 */
+        body {
+            background-image: url('/public/1.jpg'); /* 替换为你的背景图像路径 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* 背景图像固定，不随页面滚动 */
+            min-height: 260vh; /* 确保背景至少覆盖整个视口高度 */
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* ... 其他样式 ... */
 	main {
 		margin: auto;
 		padding: 1rem;

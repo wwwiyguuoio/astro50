@@ -4,6 +4,12 @@ interface Props {
 	body: string;
 	href: string;
 }
+interface CardProps {
+  href: string;
+  title: string;
+  body: string;
+  imageSrc?: string; // 定义imageSrc属性，它是一个可选的字符串类型
+}
 
 const { href, title, body } = Astro.props;
 ---
@@ -20,6 +26,19 @@ const { href, title, body } = Astro.props;
 	</a>
 </li>
 <style>
+	 .card-image {
+    max: width 80%; /* 使图片最大宽度为100%，可根据需要调整 */
+    height: auto; /* 保持图片宽高比 */
+    margin-left: 1rem; /* 图片与文字的间距 */
+    margin-right: 1rem; /* 图片与文字的间距 */
+    float: left; /* 使图片与文字并排 */
+  }
+
+  /* 清除浮动样式，可选，取决于你的布局需求 */
+  .card-content::after {
+    content: "";
+    display: table;
+    clear: both;
 	.link-card {
 		list-style: none;
 		display: flex;
@@ -58,5 +77,24 @@ const { href, title, body } = Astro.props;
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
 	}
+	<li class="link-card">
+  <a href={href}>
+    <h2>
+      {title}
+      <span>&rarr;</span>
+    </h2>
+    <div class="card-content">
+      <p>{body}</p>
+      <!-- 在文字旁边插入图片 -->
+      {imageSrc && (
+        <img 
+          src={imageSrc} 
+          alt="相关描述" 
+          class="card-image" // 使用 CSS 类来控制图片样式
+        />
+      )}
+    </div>
+  </a>
+</li>
 </style>
 

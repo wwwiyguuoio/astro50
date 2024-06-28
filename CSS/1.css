@@ -1,0 +1,28 @@
+/* 设置背景图片 */
+body {
+    margin: 0; /* 移除默认的边距 */
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* 设置默认字体 */
+    background-image: url('background-image.jpg'); /* 背景图片路径 */
+    background-size: cover; /* 背景图片覆盖整个元素 */
+    background-position: center; /* 背景图片居中显示 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+    background-attachment: fixed; /* 背景图片固定，不随滚动条滚动 */
+    height: 100vh; /* 设置高度为视口的100% */
+}
+
+/* 添加内容区域的样式 */
+.content {
+    color: #ffffff; /* 文字颜色 */
+    text-align: center; /* 文本居中 */
+    padding-top: 50px; /* 内容区域顶部边距 */
+}
+
+h1 {
+    font-size: 2em; /* 标题大小 */
+    margin-bottom: 0.5em; /* 标题底部边距 */
+}
+
+p {
+    font-size: 1em; /* 段落文字大小 */
+}

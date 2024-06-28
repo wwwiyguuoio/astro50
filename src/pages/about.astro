@@ -6,6 +6,7 @@ import TopNavigationBar from '../components/Nav.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
+
 		<svg
 			class="astro-a"
 			width="495"
@@ -35,37 +36,205 @@ import TopNavigationBar from '../components/Nav.astro';
 			</defs>
 		</svg>
         <TopNavigationBar />
-		<h1 class="text-gradient">关于我们</h1>
+		<h1 class="text-gradient">分类短剧任你选</h1>
+				<!-- 短剧类别列表 -->
+				 
+				<section class="drama-categories">
+
+					<ul class="category-list">
+						<li><a href="#">喜剧</a></li>
+						<li><a href="#">甜宠剧</a></li>
+						<li><a href="#">偶像</a></li>
+						<li><a href="#">古装</a></li>
+						<li><a href="#">重生</a></li>
+						<li><a href="#">霸总</a></li>
+						<li><a href="#">家庭</a></li>
+						<li><a href="#">职场</a></li>
+						<li><a href="#">现代</a></li>
+						<li><a href="#">悬疑</a></li>
+						<li><a href="#">权谋</a></li>
+						<li><a href="#">武侠</a></li>
+						<li><a href="#">军旅</a></li>
+					</ul>
+
+				</section>
+		
+				<!-- SVG, TopNavigationBar, other content... -->
+				<head>
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<title>并列图片画廊</title>
+					<style>
+					  body {
+						font-family: Arial, sans-serif;
+						margin: 0;
+						padding: 0;
+						background-color: #f4f4f4;
+					  }
+					  .container {
+						max-width: 1200px;
+						margin: 20px auto;
+						padding: 0 20px;
+					  }
+					  .gallery {
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+						gap: 10px;
+					  }
+					  .gallery img {
+						width: calc(33.333% - 10px);
+						object-fit: cover;
+						border-radius: 8px;
+						transition: transform 0.3s ease;
+					  }
+					  .gallery img:hover {
+						transform: scale(1.05);
+					  }
+					  @media (max-width: 768px) {
+						.gallery img {
+						  width: calc(50% - 10px);
+						}
+					  }
+					  @media (max-width: 480px) {
+						.gallery img {
+						  width: 100%;
+						}
+					  }
+					</style>
+				  </head>
+				  <body>
+					<div class="container">
+					
+					  <div class="gallery">
+						<!-- 插入图片 -->
+	                    <img src="/public/51.png" alt="yiuyuyu">
+						<img src="/public/52.png" alt="图片2描述">
+						<img src="/public/53.png" alt="图片3描述">
+						<img src="/public/54.png" alt="yiuyuyu">
+						<img src="/public/55.png" alt="图片2描述">
+						<img src="/public/56.png" alt="图片3描述">
+						<!-- 根据需要添加更多图片 -->
+					  </div>
+					</div>
+				  </body>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			这些短剧以其精彩的剧情、出色的演技和独特的题材吸引了大量观众，并在各大平台上获得了高分评价，无论您是喜欢现代都市剧、古装爱情剧还是悬疑剧，都能在这些推荐中找到适合自己的作品。
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="https://www.bilibili.com/bangumi/play/ep753931?bsource=baidu_aladdin"
+				title="偶像甜宠"
+				body="《古相思》作家沈不言的穿越经历展开，呈现了沈不言与女主陆鸢双向奔赴的千年爱恋。在一次次穿越中，沈不言看到了陆鸢身上的家国情怀，得知世人把陆鸢误读为“妖后”的原因，也决心为蒙受唾骂的陆鸢正名 ;《嫁东宫》该剧讲述了太子与大将军之女联姻，太子为了某种目的，安排了一场自己死亡，杀手月见作为新娘进入太子府，任务是与内应接头并完成暗杀任务;《浮生印》浮生在凤鸣山救下了落难的魔尊镜渊并收他为小徒弟，因此得罪了仙门。上仙卿尘前来讨要弟子发现浮生和一千年前为了保护众生而陨落消失的兮云上仙一模一样。卿尘带着疑惑离开了凤鸣山。卿尘经过了很久找到了浮生和镜渊，为了正义和苍生，他们决定要合力一起对付已经被欲望吞噬的慕瑶。"
 			/>
+		
+				 <!-- 视频容器 -->
+			<div class="video-container">
+				<!-- 第一个视频 -->
+				<video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+					<source src="/public/11.mp4" type="video/mp4">
+					<source src="/public/11.webm" type="video/webm">
+					Your browser does not support the video tag.
+				</video>
+		
+				<!-- 第二个视频 -->
+				<video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+					<source src="/public/12.mp4" type="video/mp4">
+					<source src="/public/12.webm" type="video/webm">
+					Your browser does not support the video tag.
+				</video>
+									<!-- 第二个视频 -->
+									<video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+										<source src="/public/13.mp4" type="video/mp4">
+										<source src="/public/13.webm" type="video/webm">
+										Your browser does not support the video tag.
+									</video>
+			</div>
+		
+			<!-- 其他内容 -->
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="http://www.gzgafk.com/play/216353-1-1.html"
+				title="重生逆袭"
+				body="《风月变》该剧讲述了花陵城指挥使凌长风与妻子唐千月是一对恩爱夫妻。除夕夜两人本约好一起度过，城内却突发“魂化”暴乱，从而引出了一连串的故事；《念念无明》该片讲述花陵城中，风姿绰约开成衣铺的老板娘司小念与温润如玉的书生晏无明表面是一对郎才女貌、令人羡艳的佳偶，实际两人却是隐藏身份的江湖顶级女杀手以及朝廷暗卫营今嵬司的指挥使。两人自相识起至成婚后，始终以两面身份生活、生存，因互相深爱对方，不论前一刻执行任务时如何狠辣果决，在对方面前总是尽显柔情；《招惹》该剧改编自中文在线四月天隐笛创作的同名小说，讲述了一个假少爷和一个假歌女，从原本的谍对谍到身处同一个屋檐，展开相爱相杀的悬疑爱情故事。"
 			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
+					 <!-- 视频容器 -->
+					 <div class="video-container">
+						<!-- 第一个视频 -->
+						<video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+							<source src="/public/14.mp4" type="video/mp4">
+							<source src="/public/14.webm" type="video/webm">
+							Your browser does not support the video tag.
+						</video>
+				
+						<!-- 第二个视频 -->
+						<video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+							<source src="/public/15.mp4" type="video/mp4">
+							<source src="/public/15.webm" type="video/webm">
+							Your browser does not support the video tag.
+						</video>
+											<!-- 第二个视频 -->
+											<video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+												<source src="/public/16.mp4" type="video/mp4">
+												<source src="/public/16.webm" type="video/webm">
+												Your browser does not support the video tag.
+											</video>
+					</div>
+	
 		</ul>
 	</main>
 </Layout>
 
 <style>
+	 /* 短剧类别样式 */
+	 .drama-categories {
+        background-color: rgba(50, 17, 17, 0.1); /* 轻微的背景颜色 */
+        border-radius: 0.5px; /* 圆角边框 */
+        padding: 0.5rem;
+        margin-bottom: 0.5rem; /* 与下方内容的边距 */
+    }
+
+    .category-list {
+        list-style-type: none; /* 移除列表项默认的标记 */
+        padding: 0;
+    }
+
+    .category-list li {
+        display: inline; /* 内联显示列表项 */
+        margin-right: 10px; /* 列表项之间的间隔 */
+    }
+
+    .category-list li a {
+        text-decoration: none; /* 移除下划线 */
+        color: white; /* 文字颜色 */
+        font-weight: 500; /* 字体加粗 */
+        transition: color 0.3s; /* 颜色变化的过渡效果 */
+    }
+
+    .category-list li a:hover {
+        color: #007bff; /* 鼠标悬浮时的文字颜色 */
+    }
+
+    /* 其他样式... */
+	  /* 全局样式重置 */
+	  body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* 背景图像设置 */
+        body {
+            background-image: url('/public/1.jpg'); /* 替换为你的背景图像路径 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* 背景图像固定，不随页面滚动 */
+            min-height: 220vh; /* 确保背景至少覆盖整个视口高度 */
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* ... 其他样式 ... */
 	main {
 		margin: auto;
 		padding: 1rem;

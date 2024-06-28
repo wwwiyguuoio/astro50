@@ -1,0 +1,8 @@
+/* styles.css */
+.background-page {
+    background-image: url('C:\Desktop\astro50\public\1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* 确保至少为视口高度 */
+  }

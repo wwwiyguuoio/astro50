@@ -35,36 +35,152 @@ import TopNavigationBar from '../components/Nav.astro';
 			</defs>
 		</svg>
 		<TopNavigationBar />
-		<h1 class="text-gradient">湖南简介</h1>
-		<p class="instructions">
-			本页面收集湖南相关内容.
-		</p>
+		
+		<h1 class="text-gradient">爱上热播剧</h1>
+		<div class="search-container">
+			<!-- 搜索框 -->
+			<input type="text" class="search-input" placeholder="输入搜索内容..." aria-label="Search">
+		
+			<!-- 搜索按钮 -->
+			<button type="button" class="search-button">
+				搜索
+			</button>
+			<section class="hot-drama-ranking">
+				<h2 class="ranking-title">热播榜单</h2>
+				<ol class="ranking-list">
+					<li>《我在八零年代当后妈》 - 评分: 9.5</li>
+					<li>《玫瑰冠冕》 - 评分: 9.2</li>
+					<li>《裴总每天都想父凭子贵》 - 评分: 9.0</li>
+					<li>《当家小娘子》 - 评分: 8.8</li>
+					<!-- 更多排名... -->
+				</ol>
+			</section>
+		</div>
+	<div class="image-container">
+		<img src="https://q3.itc.cn/q_70/images03/20240304/6e0bc357443840229a10585f74d3dd66.jpeg" alt="《我在八零年代当后妈》剧照" style="width: 300%; max-width: 900px; height: auto;">
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://book.douban.com/subject/26574388/"
-				title="湖南的书籍"
-				body="中国近代史上，湖南所产生的改革者、军官、革命家之多，居中国诸省之冠，但史学研究却鲜少对湖南进行连贯性的探讨。本书不同于中国现代化是首都与通商口岸启迪内陆的普遍看法，而以湖南为中心，认为湖南在内部进行的思想改革与论述，牵动了中国近代史的走向。湖南是具有独特性格的地区，……既为更大国家的建造付出心力，也孕育出自己的身份认同。本书以多不胜数的一手数据为基础写成，为发人所未发的一部力作。 ——拉纳•米特（Rana Mitter），《被遗忘的盟友》（Forgotten Ally）作者。湖南在中国历史舞台占有特殊地位长达一百多年，先是助政府平定太平天国之乱，平乱之后大量湖南人成为封疆大吏，晚清改革时湖南成为主要的改革中心之一，一九一一年辛亥革命的成功湖南贡献甚大，而在毛泽东主政的中国则有多位湖南人跻身最高领导阶层。."
+				href="https://www.bilibili.com/video/BV13D42157fb?t=3.1"
+				title="我在八零年代当后妈"
+				body="该剧由滕泽文与苏袀禾主演。故事讲述了在八零年代的复古风情中，滕泽文饰演的司念与苏袀禾饰演的周越深之间的甜蜜爱情和宅斗智斗。剧中不仅成功复刻了八十年代的生活风貌，也展现了现代女性的独立与坚韧，成为一部集穿越、甜宠、宅斗元素于一体的热门剧集。"
 			/>
+			<img src="https://q9.itc.cn/q_70/images03/20240326/2496371b13804e179b8b1b394d20c7c7.jpeg" alt="《我在八零年代当后妈》剧照" style="width: 67%; max-width: 300px; height: auto;">
 			<Card
-				href="https://www.bilibili.com/video/BV1Hj411Z7Uh/?vd_source=6d09cf8292edae97c09c78dec57df473"
-				title="湘绣"
-				body="湘绣，湖南省长沙市特产，中国国家地理标志产品。 湘绣是中国四大名绣之一，是以湖南长沙为中心的带有鲜明湘楚文化特色的湖南刺绣产品的总称，它起源于湖南的民间刺绣，吸取了苏绣和粤绣的优点而发展起来，已经有2000多年历史。 湘绣以着色富于层次、绣品若画为特点，民间有苏猫、湘虎之说。湘绣狮虎毛纹刚健直竖，眼球有神，几可乱真，已发展到异色、异形、异面的双面全异绣。湘绣先后参加过日本、巴拿马、美国等地举办的国际博览会，多次获得优胜奖，在国际市场上享有盛誉。 2011年3月28日，原国家质检总局批准对“湘绣”实施地理标志产品保护。."
+				href="https://www.bilibili.com/video/BV13e411q7vT?t=0.5"
+				title="玫瑰冠冕"
+				body="地该剧改编自久久萋的小说《软诱》。她是徐家的养女，是周越添的小尾巴，她从小到大都跟着他，直到二十四岁这年，她听到他说—— “徐家的养女而已，我怎么会真的把她放在心上，咱们这种人家，还是要门当户对。” 楼阮彻底消失后，周越添到处找她，可却再也找不到她了。再次相见，他看到她拉着一身黑的少年走进徐家家门，脸上带着明亮的笑。"
 			/>
+			<img src="https://q0.itc.cn/images01/20240511/ec187bf84a0348f2b51576a49061cdcd.jpeg" alt="《我在八零年代当后妈》剧照" style="width: 70%; max-width: 300px; height: auto;">
 			<Card
-				href="https://www.hunan.gov.cn/topic/2020hnjksc/jkschnmr/hnjk_hnmr.html"
-				title="湖南名人"
-				body="湖南自古享有“惟楚有才，于斯为盛”之誉。在中国的近现代史上，湖南有过毛泽东、彭德怀等名人。而湖南的名人不仅仅是在近代时期才有，自古以来，湖南的历史名人也不在少数。."
+				href="https://www.bilibili.com/video/BV19Z421Y7dc?t=2.3"
+				title="裴总每天都想父凭子贵"
+				body="许清雅和何聪睿的演技为基础，展开了一段围绕秘密和龙凤胎的爱情故事。这部剧通过一对意外重逢的父母和他们可爱的孩子之间的故事，展现了家庭的温馨和爱情的力量。观众在紧张刺激的剧情中，也能感受到浓浓的家庭情感，体验到爱的温暖和甜蜜"
 			/>
+			<img src="https://img1.baidu.com/it/u=1366747767,433624745&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1067" alt="《我在八零年代当后妈》剧照" style="width:70%; max-width: 300px; height: auto;">
 			<Card
-				href="https://whhlyt.hunan.gov.cn/whhlyt/news/sxxw/202306/t20230625_29383504.html"
-				title="非遗湖南"
-				body="根据联合国教科文组织[1]《保护非物质文化遗产公约》定义：非物质文化遗产(intangible cultural heritage)指被各群体、团体、有时为个人所视为其文化遗产的各种实践、表演、表现形式、知识体系和技能及其有关的工具、实物、工艺品和文化场所。各个群体和团体随着其所处环境、与自然界的相互关系和历史条件的变化不断使这种代代相传的非物质文化遗产得到创新，同时使他们自己具有一种认同感和历史感，从而促进了文化多样性和激发人类的创造力。."
+				href="https://www.bilibili.com/video/BV1LM411d7G8?t=2.4"
+				title="当家小娘子"
+				body="金美辰和陈俊宇的精彩表演，讲述了一位现代武打女明星穿越到古代成为一位年轻寡妇的故事。这部剧不仅有趣味横生的穿越元素，还有温馨动人的家庭情感和聪明的经营策略，展现了女主角的智慧和坚韧"
 			/>
+			<img src="https://ww2.sinaimg.cn/mw690/008B5Ivmly1hj64unftykj30u01axti8.jpg" alt="《我在八零年代当后妈》剧照" style="width: 70%; max-width: 300px; height: auto;">
 		</ul>
 	</main>
 </Layout>
 
 <style>
+	  .hot-drama-ranking {
+        margin: 0.5rem 0; /* 与上下内容的边距 */
+        padding: 0.5rem; /* 内边距 */
+        background-color: rgba(100, 100, 100, 0.1); /* 轻微的背景颜色 */
+        border-radius: 5px; /* 圆角边框 */
+    }
+
+    .ranking-title {
+        font-size: 1.5rem; /* 标题字体大小 */
+        color: #e30751; /* 字体颜色 */
+        margin-bottom: 0.5rem; /* 标题与列表的边距 */
+    }
+
+    .ranking-list {
+        list-style-type: decimal; /* 列表项使用数字序号 */
+        padding-left: 1.5rem; /* 列表项的左边距 */
+        color: #451b23; /* 字体颜色 */
+    }
+
+    .ranking-list li {
+        margin-bottom: 0.05rem; /* 列表项之间的边距 */
+        font-size: 1rem; /* 列表项的字体大小 */
+    }
+
+	      body {
+  /* 背景图像的路径，替换为你的背景图像路径 */
+  background-image: url('/public/1.jpg');
+
+  /* 背景图像覆盖整个元素 */
+  background-size: cover;
+
+  /* 背景图像在元素中居中显示 */
+  background-position: center;
+
+  /* 背景图像不随页面滚动 */
+  background-attachment: fixed;
+
+  /* 确保背景至少为视口高度 */
+  min-height: 350vh;
+
+  /* 其他样式 */
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+		  /* 添加一些基本样式 */
+			.search-container {
+            display: flex;
+            align-items: center; /* 垂直居中 */
+            margin: 1em auto; /* 外边距 */
+            width: 100%;
+            max-width: 800px; /* 最大宽度 */
+            padding: 1rem; /* 内边距 */
+            border: 1px solid #ccc; /* 边框 */
+            border-radius: 8px; /* 圆角边框 */
+        }
+
+        .search-input {
+            flex-grow: 1; /* 填充可用空间 */
+            padding: 0.5rem; /* 内边距 */
+            border: none; /* 无边框 */
+            outline: none; /* 点击时无轮廓 */
+            font-size: 1rem; /* 字体大小 */
+        }
+
+        .search-button {
+            padding: 0.5rem 1rem; /* 内边距 */
+            margin-left: 1rem; /* 左边距 */
+            background-color: #007bff; /* 背景颜色 */
+            color: white; /* 文字颜色 */
+            border: none; /* 无边框 */
+            border-radius: 8px; /* 圆角边框 */
+            cursor: pointer; /* 鼠标悬停时显示为手形图标 */
+            font-size: 1rem; /* 字体大小 */
+        }
+
+        .search-button:hover {
+            background-color: #0056b3; /* 鼠标悬浮时的背景颜色 */
+        }
+	  body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+
+
+    main {
+        padding: 1rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+        margin: auto;
+    }
+
 	main {
 		margin: auto;
 		padding: 1rem;

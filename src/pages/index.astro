@@ -6,6 +6,13 @@ import TopNavigationBar from '../components/Nav.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
+		      <!-- 右上角登录和个人信息链接 -->
+			  <div class="user-info">
+				<a href="/login" class="login-link">登录</a>
+				<span class="user-greeting">您好, 用户</span>
+			</div>
+	
+			<!-- SVG, TopNavigationBar, other content... -->
 		<svg
 			class="astro-a"
 			width="495"
@@ -35,28 +42,161 @@ import TopNavigationBar from '../components/Nav.astro';
 			</defs>
 		</svg>
 		<TopNavigationBar />
-		<h1 class="text-gradient">hhhh</h1>
-			<p class="instructions">
-				湖南是中国中部的一个省份，位于长江中游，因大部分区域处于洞庭湖以南而得名“湖南”，简称“湘”。湖南历史悠久，文化底蕴深厚，是华夏文明的重要发祥地之一。这里有丰富的自然景观和人文遗产，如张家界、南岳衡山、岳麓书院等。湖南也是许多历史名人的故乡，包括毛泽东、刘少奇等，被誉为“伟人故里”。此外，湖南的湘菜是中国八大菜系之一，享有盛誉。湖南的地理位置优越，交通便利，拥有发达的水陆空交通网络。
+		<h1 class="text-gradient">叶子短剧</h1>
+					<!-- Card components -->
+				</ul>
+				<p class="instructions">
+海量短剧资源：叶子短剧拥有海量的短剧资源，涵盖都市热血、甜宠言情、职场婚恋、逆袭反转、逆天改命等多种类型，满足用户的不同喜好。
+高清播放质量：短剧内容经过精心挑选，保证视频质量，支持高清播放，为用户带来清晰、流畅的观看体验
+&nbsp;&nbsp;  <!-- ...其他已有代码... -->
+
+        <!-- 本地视频播放，设置为自动播放 -->
+        <video controls width="100%" height="auto" poster="/path-to-poster.jpg" autoplay muted>
+            <source src="/public/77.mp4" type="video/mp4">
+            <source src="/public/77.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- ...其他已有代码... -->
+				
 		</p>
 		<ul role="list" class="link-card-grid">
+			
 			<Card
-				href="https://www.hunan.gov.cn/jxxx/hngk/sqjs/202003/t20200319_4976917.html"
-				title="湖南历史溯源"
-				body="湖南 ，简称湘，位于长江中游，大部分地域在洞庭湖之南，故名“湖南”。可是，你知道吗?“湖南”作为一个地理地域概念并非就是由此而来。"
-			/>
-			<img src=""C:\Desktop\v2-214dc7ee04f047977a0e48dfa576a9e7_r.jpg"" alt="描述图片的文字">
-			<Card
-				href="https://new.qq.com/rain/a/20210425A01NN800"
-				title="湖南美景"
-				body="湖南虽处闭塞之地，三面环山，但境内山水名胜早在宋元之际就出圈到了日本，描绘湖南山水的《潇湘八景》被日本人奉为国宝，编入小学生的通识课中。新世纪之初，湖南省进行了“新潇湘八景”的票选，评定24个景观(含52个景区)分别为山水文化、生态休闲、人文景观三类“新潇湘八景”。其实除此之外，仍有一些不为人知的湖南绝美之地。《中国国家地理·湖南专辑》梳理了湖南美到极致的小众景观，从中选取了十处，五一长假期间，一定要亲临，看看就知道湖南凭什么成为“网红打卡地”。"
+				href="https://www.bilibili.com/video/BV1k541127tz?t=13.0"
+				title="高分短剧"
+				body="精心制作，高分经典：《脱缰》《东兰雪》、《长公主在上》、《念念无明》、《噬心》、《君心难逑》、《君心藏不住》、《难寻》和《卿卿三思》、《风月无边》、《相思蛊》穿越题材的短剧；《霸道娘子请指教》喜剧元素的短剧。"
+				/>       <!-- 并列图片区域 -->
+				<div class="image-gallery">
+					<!-- 第一张图片 -->
+					<img class="gallery-image" src="https://q0.itc.cn/q_70/images01/20240514/f5b1301435764b13b29e9cb69aac73bb.jpeg" alt="Image 1 Description" style="width: 33%; height: auto;">
+		
+					<!-- 第二张图片 -->
+					<img class="gallery-image" src="https://ww1.sinaimg.cn/mw690/b16041a2gy1hpll8t9yaij20u01h9h4y.jpg" alt="Image 2 Description" style="width: 33%; height: auto;">
+		
+					<!-- 第三张图片 -->
+					<img class="gallery-image" src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0511%2Fa9135918j00sdb4v2018zd001jk02o0p.jpg&thumbnail=660x2147483647&quality=80&type=jpg" alt="Image 3 Description" style="width: 33%; height: auto;">
+				<!-- 第一张图片 -->
+				<img class="gallery-image" src="https://img2.baidu.com/it/u=1664890206,1867928711&fm=253&fmt=auto&app=120&f=JPEG?w=703&h=1214" alt="Image 1 Description" style="width: 33%; height: auto;">
+		
+				<!-- 第二张图片 -->
+				<img class="gallery-image" src="https://img1.baidu.com/it/u=537205109,574478701&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1147" alt="Image 2 Description" style="width: 37%; height: auto;">
+	
+				
+				</div>
+		
+				<!-- 其他内容 -->
 
-			/>
+			<Card
+				href="https://www.bilibili.com/video/BV1gP411n7aC?t=27.9"
+				title="高颜值短剧"
+				body="视觉盛宴，颜狗天堂：《爱在黎明前降落》、《执笔》、《千金丫鬟》，《授她以柄》、《卿卿三思》、《病娇反派攻略计划》、《锁爱三生》、《招惹》、《虚颜》、《风月变》、《千金ㄚ环》、《寒枝折不断》和《长公主在上》"
+			/>   <!-- 并列图片区域 -->
+			<div class="image-gallery">
+				<!-- 第一张图片 -->
+				<img class="gallery-image" src="https://img1.baidu.com/it/u=1093986691,2812815544&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=753" alt="Image 1 Description" style="width: 35%; height: auto;">
+	
+				<!-- 第二张图片 -->
+				<img class="gallery-image" src="https://www.zaoxu.com/uploadfile/2023/0926/1695691328143_0.jpg" alt="Image 2 Description" style="width: 30%; height: auto;">
+	
+				<!-- 第三张图片 -->
+				<img class="gallery-image" src="https://img0.baidu.com/it/u=1144473159,3011512206&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1046" alt="Image 3 Description" style="width: 40%; height: auto;">
+			<!-- 第一张图片 -->
+			<img class="gallery-image" src="https://inews.gtimg.com/om_bt/O6K4owXlNylzHcS0qyk4JS7GpMeJJbs1N8gHDF8cjQFb8AA/641" alt="Image 1 Description" style="width: 36%; height: auto;">
+	
+			<!-- 第二张图片 -->
+			<img class="gallery-image" src="http://img0.baidu.com/it/u=3173288815,2836010755&fm=253&app=138&f=JPEG?w=712&h=1266" alt="Image 2 Description" style="width: 30%; height: auto;">
+
+			
+			</div>
+	
+			<!-- 其他内容 -->
 		</ul>
 	</main>
 </Layout>
 
 <style>
+    .image-gallery {
+        display: flex; /* 使用Flexbox布局 */
+        justify-content: space-between; /* 图片之间保持间隔 */
+        align-items: center; /* 确保图片垂直居中 */
+        margin: 1rem auto; /* 外边距 */
+        max-width: 800px; /* 最大宽度 */
+    }
+
+    .gallery-image {
+        flex: 1; /* 图片占据可用空间 */
+        max-width: 100%; /* 最大宽度为容器宽度 */
+        margin: 5px; /* 内边距 */
+        transition: transform 0.3s ease; /* 平滑过渡效果 */
+    }
+
+    .gallery-image:hover {
+        transform: scale(1.05); /* 鼠标悬停时放大图片 */
+    }
+
+    /* 其他样式... */
+
+
+	  .user-info {
+        position: absolute;
+        top: 20px; /* 距离顶部的距离 */
+        right: 20px; /* 距离右侧的距离 */
+        display: flex;
+        align-items: center;
+        gap: 10px; /* 链接之间的间隔 */
+        font-size: 1.2rem;
+        color: #fff; /* 文字颜色 */
+    }
+
+    .login-link {
+        text-decoration: none; /* 移除下划线 */
+        color: inherit; /* 从父元素继承颜色 */
+    }
+
+    .user-greeting {
+        font-weight: bold;
+    }
+
+    /* 鼠标悬浮时的样式 */
+    .login-link:hover {
+        text-decoration: underline; /* 下划线 */
+    }
+
+    /* 媒体查询：适应小屏幕 */
+    @media (max-width: 600px) {
+        .user-info {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+        /* 背景图像设置 */
+        background-image: url('/public/1.jpg'); /* 替换为你的背景图像路径 */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* 确保背景图像在页面滚动时固定 */
+        min-height: 210%;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+
+    main {
+        position: relative;
+        z-index: 1; /* 确保主要内容在背景之上 */
+        padding: 1rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+        margin: auto;
+    }
+    
 	main {
 		margin: auto;
 		padding: 1rem;
@@ -113,4 +253,6 @@ import TopNavigationBar from '../components/Nav.astro';
 		gap: 2rem;
 		padding: 0;
 	}
+</a>
 </style>
+
